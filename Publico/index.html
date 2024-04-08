@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de encuesta Racing Club</title>
+    <link rel="stylesheet" href="Css/styles.css">   
+  </head>
+
+   <body>
+    <main>
+      <h1 id="title">Encuesta 2024 de la Academia <img class="logo" src="https://barrabrava.net/img/clubes/racing-club-barrabrava-net.png" alt="Racing es Mi Vida"></h1>
+      <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar.</p>
+      <form id="survey-form">
+
+        <fieldset>
+          <label id="name-label" >Nombre <input class="nombre" id="name" name="nombre" type="text" placeholder="Introduzca su nombre" required/>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label id="email-label">Email <input class="email" id="email" name="email" type="email" placeholder="Introduce tu correo electronico" required/>
+          </label>
+        </fieldset>
+
+        <fieldset>
+         <label id="number-label" for="edad">Edad <input class="edad" id="number" name="edad" type="number" min="13" max="120" placeholder="Edad"/>
+         </label>
+        </fieldset>
+
+        <fieldset>
+        <h2>¿Qué opción describe mejor su función actual?</h2>
+        <label for="rol">
+         <select id="dropdown" name="rol"> 
+           <option value="">Seleccione el rol actual</option>
+           <option value="1">Alumno</option>
+           <option value="2">Trabajo de tiempo completo</option> 
+           <option value="3">Estudiante de tiempo completo</option>
+           <option value="4">Prefiero no decirlo</option>
+           <option value="5">Otro</option>    
+          </select> 
+         </label>
+        </fieldset>
+
+        <fieldset>
+         <h3>¿Qué nivel de hincha sos de Racing Club?</h3>
+         <label for="Simpatizante"><input value="radioboton1" class="boton1" name="boton radio 1" id="definitivamente" type="radio"/>Simpatizante
+         </label>
+         <label for="Socio del Club"> <input  value="radioboton2" class="boton1" name="boton radio 1" id="tal vez" type="radio"/>Socio del Club
+         </label>
+         <label for="Fanático"><input value="radioboton3" class="boton1" name="boton radio 1" id="no estoy seguro" type="radio"/>Fanático
+         </label>
+       </fieldset>
+
+      <fieldset>
+       <h4>¿Cuál de estas canciones es la que mas te gusta de la Academia?</h4>
+       <label for="favorita">
+         <select name="favorita" id="función favorita">
+           <option value="">Seleccione una opcion</option>
+           <option value="1">"Academia te llevo en el corazon"</option>
+           <option value="2">"De Pendejo Te Sigo"</option>
+           <option value="3">"Muchachos, Traigan Vino Juega La Acade"</option>
+           <option value="4">"Nadie Comprende"</option>
+         </select> 
+       </label>
+      </fieldset>
+
+      <fieldset>
+        <h5>¿Qué cosas se tienen que mejorar en el cilindro?</h5>
+        <label for="Mejoras de Butacas"><input value="choise1" class="choise" name="Mejoras de Butacas" id="Butacas" type="checkbox"/>Mejoras de Butacas
+        </label>
+        <label for="Mejoras en los accesos y estacionamiento"><input value="choise2" class="choise" name="Mejoras en los accesos" id="Mejoras en los accesos y estacionamiento" type="checkbox"/>Mejoras en los accesos y estacionamiento
+        </label>
+        <label for="Ampliar las plateas bajas"><input value="choise3" class="choise" name="Ampliar las plateas bajas" id="Ampliar las plateas" type="checkbox"/>Ampliar las plateas bajas
+        </label>
+        <label for="Remodelación en los exteriores del cilindro"><input value="choise4" class="choise" name="Remodelación en los exteriores del cilindro" id="Remodelación en los exteriores" type="checkbox"/>Remodelación en los exteriores del cilindro
+        </label>
+        <label for="Mejoras en el predio Tita Mattiussi"><input value="choise5" class="choise" name="Mejoras en el predio Tita Mattiussi" id="Tita Mattiussi" type="checkbox"/>Mejoras en el predio Tita Mattiussi
+        </label>
+        <label for="Nuevos palcos en Sector B"><input value="choise6" class="choise" name="Nuevos palcos en Sector B" id="Nuevos palcos" type="checkbox"/>Nuevos palcos en Sector B
+        </label>
+        <label for="Remodelación hall de la fama y la confitería interna"><input value="choise7" class="choise" name="Remodelación hall de la fama y la confitería interna" id="Remodelación hall de la fama" type="checkbox"/>Remodelación hall de la fama y la confitería interna
+        </label>
+        <label for="Reforma integral del campo de juego"><input value="choise8" class="choise" name="Reforma integral del campo de juego" id="campo de juego" type="checkbox"/>Reforma integral del campo de juego
+        </label>
+        <label for="Tapar la fosa y colocar un cerco vidriado"><input value="choise9" class="choise" name="Tapar la fosa y colocar un cerco vidriado" id="Tapar la fosa" type="checkbox"/>Tapar la fosa y colocar un cerco vidriado
+        </label>
+        <label for="Aumentar la calidad edilicia"><input value="choise10" class="choise" name="Aumentar la calidad edilicia" id="calidad edilicia" type="checkbox"/>Aumentar la calidad edilicia
+        </label>
+        <label for="Reforma integral de vestuarios"><input value="choise11" class="choise" name="cursos" id="Reforma vestuarios" type="checkbox"/>Reforma integral de vestuarios
+        </label>       
+      </fieldset>
+
+      <fieldset>
+        <h6>¿Algún comentario o sugerencia?</h6> 
+        <label for="sugerencia"><textarea name="sugerencia" id="comentario" rows="5" cols="38" placeholder="Escribe aqui tu comentario..."></textarea>
+      </label>
+      </fieldset>
+
+      <fieldset>
+        <input id="submit" type="submit" value="Entregar"/>
+      </fieldset>
+     </form> 
+          
+    </main>
+  </body>
+</html>
